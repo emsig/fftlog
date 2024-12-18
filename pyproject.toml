@@ -1,0 +1,27 @@
+[build-system]
+build-backend = 'mesonpy'
+requires = [
+  "meson-python",
+  "numpy",
+  "wheel",
+  "charset_normalizer",
+]
+
+[project]
+name = "fftlog"
+readme = "README.rst"
+license = { text = "CC0-1.0" }
+version = "0.2.1"
+authors = [
+    { name = "Dieter Werthmüller", email = "dieter@werthmuller.org" },
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+]
+dependencies = [
+    "scipy",
+]
+
+[project.urls]
+Repository = "https://github.com/prisae/fftlog"
