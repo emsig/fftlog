@@ -54,7 +54,7 @@ jobs:
           python -m pip install .[all]
 
       - name: Flake8
-        run: flake8 pyfftlog/ tests/
+        run: flake8 src/ tests/
 
       - name: Test with pytest
         run: pytest --cov=fftlog
