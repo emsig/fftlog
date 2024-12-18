@@ -1,5 +1,5 @@
-.. image:: https://github.com/prisae/fftlog/workflows/pytest/badge.svg?branch=master
-   :target: https://github.com/prisae/fftlog/actions
+.. image:: https://github.com/emsig/fftlog/workflows/pytest/badge.svg?branch=master
+   :target: https://github.com/emsig/fftlog/actions
    :alt: GitHub Actions
 .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.3830534.svg
    :target: https://doi.org/10.5281/zenodo.3830534
@@ -13,8 +13,8 @@ This is a simple `f2py`-wrapper for the logarithmic FFT code *FFTLog* as
 presented in Appendix B of [Hami00]_ and published at
 `casa.colorado.edu/~ajsh/FFTLog <http://casa.colorado.edu/~ajsh/FFTLog>`_.
 
-A pure python version (`pyfftlog`) can be found on `github.com/prisae/pyfftlog
-<https://github.com/prisae/pyfftlog>`_. Tests have shown that `fftlog` is a bit
+A pure python version (`pyfftlog`) can be found on `github.com/emsig/pyfftlog
+<https://github.com/emsig/pyfftlog>`_. Tests have shown that `fftlog` is a bit
 faster than `pyfftlog`, but `pyfftlog` is easier to implement, as you only need
 `NumPy` and `SciPy`, without the need to compile anything.
 
@@ -28,7 +28,7 @@ test from the original code, and my use case, which is `pyfftlog.fftl` with
 (forward). Please let me know if you encounter any issues.
 
 - **Documentation**: https://pyfftlog.readthedocs.io
-- **Source Code**: https://github.com/prisae/fftlog
+- **Source Code**: https://github.com/emsig/fftlog
 
 **Note** that the documentation is for the pure python version `pyfftlog`, but
 equally applies to `fftlog`.
