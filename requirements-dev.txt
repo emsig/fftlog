@@ -1,8 +1,0 @@
-# GLOBAL REQUIREMENTS
--r requirements.txt
-
-# FOR TESTING
-pytest
-coveralls
-pytest_cov
-pytest_flake8

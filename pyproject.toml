@@ -1,0 +1,43 @@
+[build-system]
+build-backend = "mesonpy"
+requires = [
+  "meson-python",
+  "numpy",
+  "wheel",
+  "charset_normalizer",
+]
+
+[project]
+name = "fftlog"
+description = "A python wrapper for FFTLog"
+readme = "README.rst"
+version = "0.2.1"
+authors = [
+  {name = "The emsig community", email = "info@emsig.xyz"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+]
+dependencies = [
+    "numpy",
+    "scipy",
+]
+
+[project.license]
+file = "LICENSE"
+
+[project.optional-dependencies]
+tests = [
+    "flake8",
+    "pytest",
+    "coveralls",
+    "pytest_cov",
+    "flake8-pyproject",
+]
+all = [
+    "fftlog[tests]",
+]
+
+[project.urls]
+Repository = "https://github.com/prisae/fftlog"
