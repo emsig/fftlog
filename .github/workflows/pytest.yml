@@ -82,14 +82,6 @@ jobs:
           python -m pip install build
 
       - name: Build source and wheel distributions
-        if: github.ref == 'refs/heads/main'
-        run: |
-          # Change setuptools-scm local_scheme to "no-local-version" so the
-          # local part of the version isn't included, making the version string
-          # compatible with Test PyPI.
-          sed --in-place 's/version_file/local_scheme = "no-local-version"\nversion_file/g' pyproject.toml
-
-      - name: Build source and wheel distributions
         run: |
           # Build source and wheel packages
           python -m build

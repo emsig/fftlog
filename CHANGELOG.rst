@@ -5,6 +5,8 @@ Changelog
 v0.2.2 : Update home and build backend
 --------------------------------------
 
+**2024-12-30**
+
 No code changes. What changed:
 - Moved from github.com/prisae to github.com/emsig.
 - Ported build from distutils to meson (thanks @jokva).
@@ -12,6 +14,8 @@ No code changes. What changed:
 
 v0.2.1 : Fix packaging
 ----------------------
+
+**2020-05-22**
 
 Version 0.2.0 had some problems with the way it was packaged on PyPi and
 conda-forge. Nothing changed in the code itself.
