@@ -11,7 +11,7 @@ requires = [
 name = "fftlog"
 description = "A python wrapper for FFTLog"
 readme = "README.rst"
-version = "0.2.2dev1"  # also in __init__.py
+version = "0.2.2"  # also in __init__.py
 authors = [
   {name = "The emsig community", email = "info@emsig.xyz"},
 ]
@@ -40,4 +40,4 @@ all = [
 ]
 
 [project.urls]
-Repository = "https://github.com/prisae/fftlog"
+Repository = "https://github.com/emsig/fftlog"
