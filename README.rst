@@ -1,5 +1,5 @@
-.. image:: https://github.com/emsig/fftlog/workflows/pytest/badge.svg?branch=main
-   :target: https://github.com/emsig/fftlog/actions
+.. image:: https://github.com/emsig/fftlog/actions/workflows/pytest.yml/badge.svg?branch=main
+   :target: https://github.com/emsig/fftlog/actions/workflows/pytest.yml
    :alt: GitHub Actions
 .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.3830534.svg
    :target: https://doi.org/10.5281/zenodo.3830534
