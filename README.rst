@@ -1,4 +1,4 @@
-.. image:: https://github.com/emsig/fftlog/workflows/pytest/badge.svg?branch=master
+.. image:: https://github.com/emsig/fftlog/workflows/pytest/badge.svg?branch=main
    :target: https://github.com/emsig/fftlog/actions
    :alt: GitHub Actions
 .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.3830534.svg
