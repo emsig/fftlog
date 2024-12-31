@@ -12,6 +12,14 @@ on:
   schedule:
     - cron: "14 14 20 * *"
 
+# Use bash by default in all jobs
+defaults:
+  run:
+    # Using "-l {0}" is necessary for conda environments to be activated
+    # But this breaks on MacOS if using actions/setup-python:
+    # https://github.com/actions/setup-python/issues/132
+    shell: bash
+
 # Cancel any previous run of the test job.
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -34,11 +42,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          # Need to fetch more than the last commit so that setuptools_scm can
-          # create the correct version string. If the number of commits since
-          # the last release is greater than this, the version still be wrong.
-          # Increase if necessary.
-          fetch-depth: 100
           # The GitHub token is preserved by default but this job doesn't need
           # to be able to push to GitHub.
           persist-credentials: false
@@ -70,6 +73,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # The GitHub token is preserved by default but this job doesn't need
+          # to be able to push to GitHub.
+          persist-credentials: false
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -88,6 +95,8 @@ jobs:
           echo ""
           echo "Generated files:"
           ls -lh dist/
+          # Remove wheel
+          rm dist/fftlog*.whl
 
       - name: Publish to PyPI
         # Only for releases

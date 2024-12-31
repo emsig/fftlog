@@ -5,7 +5,7 @@ Changelog
 v0.2.2 : Update home and build backend
 --------------------------------------
 
-**2024-12-30**
+**2024-12-31**
 
 No code changes. What changed:
 - Moved from github.com/prisae to github.com/emsig.
